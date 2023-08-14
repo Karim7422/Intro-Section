@@ -1,0 +1,113 @@
+:root {
+    --white: hsl(0, 0%, 98%);
+    --gray: hsl(0, 0%, 41%);
+    --black: hsl(0, 0%, 8%);
+    --main-font: 'Epilogue', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--white);
+}
+
+/* TODO Navbar Style Start */
+nav a {
+    padding-inline: 1rem !important;
+}
+
+nav a,
+button {
+    color: var(--gray) !important;
+}
+
+nav a:hover,
+button:hover {
+    color: var(--black) !important;
+    background-color: transparent !important;
+}
+
+.dropdown-menu {
+    box-shadow: 1px 1px 25px 0px hsl(0deg 0% 8% / 19%);
+}
+
+.offcanvas-end {
+    width: 65% !important;
+}
+
+/* TODO Navbar Style End */
+
+/* TODO Main Style Start */
+
+.content-box {
+    height: 80vh;
+
+}
+
+.content {
+    max-width: 425px;
+}
+
+.content h2 {
+    color: var(--black) !important;
+    font-weight: 700;
+    font-size: 4rem;
+
+}
+
+.content p {
+    color: var(--gray);
+}
+
+.content-box button {
+    color: var(--white) !important;
+    border-radius: 13px;
+}
+
+.content-box button:hover {
+    color: var(--black) !important;
+}
+
+.logos img {
+    max-width: 100px;
+    height: 20px;
+}
+
+.img-box {
+    height: 80vh;
+}
+
+/* TODO Main Style End */
+
+/* todo Media Query For Small And Medium Devices */
+
+@media (max-width:768px) {
+    .img-box {
+        height: 40vh;
+    }
+
+    .content-box {
+        height: 0;
+        display: flex !important;
+        justify-content: flex-start !important;
+    }
+
+    .content {
+        margin: auto;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .content p {
+        min-width: 250px;
+        font-size: 0.75rem;
+        text-align: center;
+        margin: 0 3rem !important;
+    }
+
+    .logos {
+        margin: auto;
+    }
+}
